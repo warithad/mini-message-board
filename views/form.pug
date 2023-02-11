@@ -1,0 +1,8 @@
+extends layout 
+
+block content
+    h1= 'Form Page'
+    form(method='POST', action='/new')
+        input(type='text', name='messageUser' id='messageUser' placeholder='user')  
+        input(type='text', name='messageText' id='messageText' placeholder='message')
+        button(type='submit') Submit

@@ -3,3 +3,11 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  main 
+   - var url = 'new';  
+    a(href='/' + url) Add new message
+    each message in messages
+      p.user= 'Author ' + message.user
+      p.text= 'Message ' + message.text
+      p.date= 'Date ' + message.date
+      
